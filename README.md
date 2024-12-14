@@ -21,7 +21,7 @@ textColor="#CBC917"
 font="sans serif"
 
 --------------------------------------------------------------------
-Esta app tiene mulitiples aplicaciones (o se puede adaptar) o para distintos sectores
+Esta app tiene multiples aplicaciones (o se puede adaptar) o para distintos sectores
 Sector Salud: analisis por rango de edad, patologias ambulatorias, patologias complejas 
 -determinar tendencia- predecir tasas de crecmiento o no de enfermedades 
 o patologicas 
