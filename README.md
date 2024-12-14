@@ -21,17 +21,11 @@ textColor="#CBC917"
 font="sans serif"
 
 --------------------------------------------------------------------
-Esta app tiene multiples aplicaciones (o se puede adaptar) o para distintos sectores
-Sector Salud: analisis por rango de edad, patologias ambulatorias, patologias complejas 
--determinar tendencia- predecir tasas de crecmiento o no de enfermedades 
-o patologicas 
-- medir y también anticiapar potenciales patologias no identificas
-Sector Seguro: analisis de carteras por vehiculo, sinisestros. tendencia, 
-riesgo-predecir cobertura, rango de edades, potenciales mejores rango de rentabilidad. 
-Sector Inmobiliario: analisis de propiedades más demandadas, predecir tendencia,
-potenciales sectores urbanos con mayor rendmiento esperado, predecir
-potenciales sectores ubanisticos y rurales con crecimiento esperado. etc.
-
+Esta app tiene múltiples aplicaciones (o se puede adaptar) o para distintos sectores Sector Salud: análisis por rango de edad, patologías ambulatorias, 
+patologías complejas -determinar tendencia- predecir tasas de crecimiento o no de enfermedades o patológicas medir y también anticipar potenciales patologías 
+no identificas Sector Seguro: análisis de carteras por vehículo, siniestros. tendencia, riesgo-predecir cobertura, rango de edades, potenciales mejores 
+rango de rentabilidad. Sector Inmobiliario: análisis de propiedades más demandadas, predecir tendencia, potenciales sectores urbanos con mayor rendimiento esperado,
+predecir potenciales sectores urbanísticos y rurales con crecimiento esperado. etc
 
 
 https://github.com/user-attachments/assets/08b22eb8-93a0-46dd-a971-1c6f0beaced8
