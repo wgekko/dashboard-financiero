@@ -179,12 +179,21 @@ with st.container():
     st.write("---")
     left, middle, right = st.columns(3, gap='medium', vertical_alignment="center")
     with left:
-        st.title("Análisis de Bitcoin, Indice Merval, Dólar Blue, Al30D")
+        st.subheader("Análisis de Bitcoin, Indice Merval, Dólar Blue, Al30D")
         #st.subheader("De desarrollo de gráficos y datos de:")
         #st.write("#")
-        st.subheader(
+        st.write(
             "Evolución de variables nominales, deflactadas y estadisticas."
         )
+        st.write(
+            "Análisis Estadistico de los Activos."
+        )
+        st.write(
+            "Análisis Intervalos de confianza."
+        )
+        st.write(
+            "Análisis Regresión Lineal Multiple de Riesgo/Rendimiento Esperado."
+        )        
         st.write("Fuente:BYMA, Yahoo finance.")
     with middle:
                #"""### gif from local file"""
@@ -199,11 +208,8 @@ with st.container():
         
     with right:
        components.html(particles_js, height=250,scrolling=False) 
-    st.write("---")
-with st.container():
-    #st.write("---")
-    st.write("&copy; - derechos reservados -  2024 -  Walter Gómez - FullStack Developer - Data Science - Business Intelligence")
-    #st.write("##")    
+    st.write("---")    
+   
 
 #""" imagen de sidebar"""
 def add_local_sidebar_image(image):
@@ -244,13 +250,20 @@ with st.sidebar:
     with col2:
         st.subheader("Analisis de Activos Financieros")       
     st.write("---")
-    st.link_button("Mi LinkedIn", "https://www.linkedin.com/in/walter-gomez-fullstack-developer-jr-java-python-adm-finanzas/")
-    #st.write("#")
-    st.link_button("Mi Porfolio", "https://walter-portfolio-animado.netlify.app/")
-    st.write("#")
     st.write("activar sonido")
     st.audio(app_musica)
     
 
 components.html(particles_js, height=150,scrolling=False)
 st.write("---")
+with st.container():
+  #st.write("---")
+  st.write("&copy; - derechos reservados -  2024 -  Walter Gómez - FullStack Developer - Data Science - Business Intelligence")
+  #st.write("##")
+  left, right = st.columns(2, gap='small', vertical_alignment="bottom")
+  with left:
+    #st.write('##')
+    st.link_button("Mi LinkedIn", "https://www.linkedin.com/in/walter-gomez-fullstack-developer-jr-java-python-adm-finanzas/")
+  with right: 
+     #st.write('##') 
+    st.link_button("Mi Porfolio", "https://walter-portfolio-animado.netlify.app/")

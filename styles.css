@@ -1,0 +1,14 @@
+[data-testid=metric-container] {
+        box-shadow: 0 0 4px /*#66eeee*/;
+        padding: 10px;
+    }    
+    .plot-container>div {
+        box-shadow: 0 0 4px /*#064ac9*/;
+        padding: 10px;   
+    }    
+    div[data-testid="stExpander"] div[role="button"] p    {
+        font-size: 1.2rem;
+    }
+    div[data-testid="stDataframe"] div[role="button"] p {
+        font-size: 1.2rem;  
+    }
