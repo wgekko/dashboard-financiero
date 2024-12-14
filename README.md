@@ -34,6 +34,10 @@ potenciales sectores ubanisticos y rurales con crecimiento esperado. etc.
 
 
 
+https://github.com/user-attachments/assets/08b22eb8-93a0-46dd-a971-1c6f0beaced8
 
-https://github.com/user-attachments/assets/38613cce-e977-4d81-908e-1e78869c4667
+
+
+
+
 
