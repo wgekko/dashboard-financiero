@@ -220,6 +220,16 @@ with st.sidebar:
 
 # ---- Descripcion de la pagina primera pagina de evol de variables diario----
 df = pd.read_excel('datos/basedatos.xlsx')
+mediaBit = pd.Series(df["BITCOIN"])
+mediaBlue = pd.Series(df["BLUE"])
+mediaMerv = pd.Series(df["MERV"])
+mediaAl30d = pd.Series(df["AL30D"])
+df["MED-BIT"] = mediaBit.rolling(30).mean()
+df["MED-BLUE"] = mediaBlue.rolling(30).mean()
+df["MED-MERV"] = mediaMerv.rolling(30).mean()
+df["MED-AL30D"] = mediaAl30d.rolling(30).mean()
+
+
 
 list_option = ['BITCOIN', 'BLUE', 'MERV', 'AL30D']
 option = st.radio("Seleccione una opción : ", (list_option), horizontal=True )
@@ -227,13 +237,17 @@ option = st.radio("Seleccione una opción : ", (list_option), horizontal=True )
 st.write("---")
 if option == 'BITCOIN':
     st.subheader(f"Evolución del valor Diario de : {option} (cotización)")
-    st.write('el valor : BITCOIN,  está expresado u$d (periodo diario)')
+    st.write('el valor : BITCOIN, expresado u$d (periodo diario)/ media movil 30 dias')
     st.write("---")
     fig= px.line(
         df,
         x='FECHA',
-        y= option,
+        y= ["BITCOIN", "MED-BIT"],
+        color_discrete_map={"BITCOIN": "white", "MED-BIT": "yellow"},
         #markers=True
+    )
+    fig.update_xaxes(
+        rangeslider_visible=True,       
     )
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
@@ -254,13 +268,17 @@ if option == 'BITCOIN':
 # ---- BLUE ----
 elif option == 'BLUE':
     st.subheader(f"Evolución del valor Diario de : {option} (cotización)")
-    st.write('el valor : BLUE,  está expresado $ (periodo diario)')
+    st.write('el valor : BLUE, expresado $ (periodo diario) / media móvil de 30 días')
     st.write("---")
     fig= px.line(
         df,
         x='FECHA',
-        y= option,
+        y= ["BLUE", "MED-BLUE"],
+        color_discrete_map={"BLUE": "white", "MED-BLUE": "yellow"},
         #markers=True
+    )
+    fig.update_xaxes(
+        rangeslider_visible=True,       
     )
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
@@ -280,13 +298,16 @@ elif option == 'BLUE':
 # ---- INDICE MERVAL ----
 elif option == 'MERV':
     st.subheader(f"Evolución del valor Diario de : {option} (cotización)")
-    st.write('el valor : INDICE MERVAL,  está expresado $ (periodo diario)')
+    st.write('el valor : INDICE MERVAL, expresado $ (periodo diario) / media móvil de 30 dias')
     st.write("---")
     fig= px.line(
         df,
-        x='FECHA',
-        y= option,
+        y= ["MERV", "MED-MERV"],
+        color_discrete_map={"MERV": "white", "MED-MERV": "yellow"},
         #markers=True
+    )
+    fig.update_xaxes(
+        rangeslider_visible=True,       
     )
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
@@ -315,13 +336,17 @@ elif option == 'MERV':
 # ---- AL30D ----
 elif option == 'AL30D':
     st.subheader(f"Evolución del valor Diario de : {option} (cotización)")
-    st.write('el valor : AL30D,  está expresado $ (periodo diario)')
+    st.write('el valor : AL30D, expresado $ (periodo diario) / media móvil 30 días')
     st.write("---")
     fig= px.line(
         df,
         x='FECHA',
-        y= option,
+        y= ["AL30D", "MED-AL30D"],
+        color_discrete_map={"AL30D": "white", "MED-AL30D": "yellow"},
         #markers=True
+    )
+    fig.update_xaxes(
+        rangeslider_visible=True,       
     )
     st.plotly_chart(fig, theme="streamlit", use_container_width=True)
 
