@@ -368,30 +368,30 @@ if option == 'BITCOIN':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población(min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media (SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")           
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True)           
     #st.write("Media de la muestra (Bitcoin):", round(sample_mean, 2)*1000)
     #st.write("Desviación estándar de la muestra (Bitcoin):", round(sample_std, 2)*1000)
     #st.write("Tamaño de la población (N):", N)
@@ -483,7 +483,7 @@ if option == 'BITCOIN':
         """
     <style>
     [data-testid="stMetricValue"] {
-        font-size: 30px;
+        font-size: 20px;
     }
     </style>
     """,
@@ -492,30 +492,30 @@ if option == 'BITCOIN':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media(SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")                 
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True)                 
     #st.write("Media de la muestra (Rend.Bitcoin):", round(sample_mean, 2)*100)
     #st.write("Desviación estándar de la muestra (Rend.Bitcoin):", round(sample_std, 2)*100)
     #st.write("Tamaño de la población (N):", N)
@@ -610,30 +610,30 @@ elif option == 'BLUE':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media(SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")   
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True )   
     
     #st.write("Media de la muestra (Blue):", round(sample_mean, 2))
     #st.write("Desviación estándar de la muestra (Blue):", round(sample_std, 2))
@@ -725,7 +725,7 @@ elif option == 'BLUE':
         """
     <style>
     [data-testid="stMetricValue"] {
-        font-size: 30px;
+        font-size: 20px;
     }
     </style>
     """,
@@ -734,30 +734,30 @@ elif option == 'BLUE':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media(SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True)
     
     #st.write("Media de la muestra (Rend.Blue):", round(sample_mean, 2)*100)
     #st.write("Desviación estándar de la muestra (Rend.Blue):", round(sample_std, 2)*100)
@@ -853,30 +853,30 @@ elif option == 'MERV':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media(SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True)
     
     #st.write("Media de la muestra (Merval):", round(sample_mean, 2)*1000)
     #st.write("Desviación estándar de la muestra (Merval):", round(sample_std, 2)*1000)
@@ -966,7 +966,7 @@ elif option == 'MERV':
         """
     <style>
     [data-testid="stMetricValue"] {
-        font-size: 30px;
+        font-size: 15px;
     }
     </style>
     """,
@@ -975,30 +975,30 @@ elif option == 'MERV':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean*1000):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std*1000):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean*1000):,.2f}/{(upper_bound_mean*1000):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std*1000):,.2f}/{(upper_bound_std*1000):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media(SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True)
     
     #st.write("Media de la muestra (Rend.Merval):", round(sample_mean, 2)*100)
     #st.write("Desviación estándar de la muestra (Rend.Merval):", round(sample_std, 2))
@@ -1084,7 +1084,7 @@ elif option == 'AL30D':
         """
     <style>
     [data-testid="stMetricValue"] {
-        font-size: 30px;
+        font-size: 20px;
     }
     </style>
     """,
@@ -1093,30 +1093,30 @@ elif option == 'AL30D':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media(SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True)
     
     #st.write("Media de la muestra (AL30D):", round(sample_mean, 2))
     #st.write("Desviación estándar de la muestra (AL30D):", round(sample_std, 2))
@@ -1207,7 +1207,7 @@ elif option == 'AL30D':
         """
     <style>
     [data-testid="stMetricValue"] {
-        font-size: 30px;
+        font-size: 20px;
     }
     </style>
     """,
@@ -1217,30 +1217,30 @@ elif option == 'AL30D':
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Media de la muestra", icon="📊")
-        st.metric(label="valor", value=f"{(sample_mean):,.2f}")
+        st.metric(label="valor", value=f"{(sample_mean):,.2f}", border=True)
     with c2:
         st.info('Desv. Estándar de la muestra', icon="📊")
-        st.metric(label="valor", value=f"{(sample_std):,.2f}")
+        st.metric(label="valor", value=f"{(sample_std):,.2f}", border=True)
     with c3:
         st.info('Tamaño de la población (N)', icon="📊")
-        st.metric(label="valor", value=f"{N}")
+        st.metric(label="valor", value=f"{N}", border=True)
     with c4:
         st.info('FPCF (Factor Corrección de Población Finita) Aplicado', icon="📊")
-        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}")
+        st.metric(label="#", value=f"{'Yes' if fpcf != 1 else 'No'}", border=True)
     
     c1,c2,c3,c4=st.columns(4)
     with c1:
         st.info("Nivel de confianza", icon="📊")
-        st.metric(label="valor",value=f"{confidence_level * 100} %")
+        st.metric(label="valor",value=f"{confidence_level * 100} %", border=True)
     with c2:
         st.info('Interv. de confianza para la media de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_mean):,.2f}/{(upper_bound_mean):,.2f}", border=True)
     with c3:
         st.info('Interv. de confianza para la Desv. ESTD de la población (min/max)', icon="📊")
-        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}")
+        st.metric(label="valor", value=f"{(lower_bound_std):,.2f}/{(upper_bound_std):,.2f}", border=True)
     with c4:
         st.info('Error estándar de la media(SEM)', icon="📊")
-        st.metric(label="valor",value=f"{(sem):,.2f}")
+        st.metric(label="valor",value=f"{(sem):,.2f}", border=True)
     
     #st.write("Media de la muestra (Rend.AL30D):", round(sample_mean, 2)*100)
     #st.write("Desviación estándar de la muestra (Rend.AL30D):", round(sample_std, 2))
@@ -1267,7 +1267,7 @@ with st.container():
   left, right = st.columns(2, gap='small', vertical_alignment="bottom")
   with left:
     #st.write('##')
-    st.link_button("Mi LinkedIn", "https://www.linkedin.com/in/walter-gomez-fullstack-developer-jr-java-python-adm-finanzas/")
+    st.link_button("Mi LinkedIn", "https://www.linkedin.com/in/walter-gomez-fullstack-developer-datascience-businessintelligence-finanzas-python/")
   with right: 
      #st.write('##') 
     st.link_button("Mi Porfolio", "https://walter-portfolio-animado.netlify.app/")

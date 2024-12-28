@@ -1,24 +1,15 @@
 streamlit 
 pandas
 plotly
-matplotlib
 plotly-express
-matplotlib-colors
-components.v1.html
-base64
-numpy
-plotly
 matplotlib
-sklearn.model_selection
-sklearn
-sklearn.ensemble 
-scipy.stats
+matplotlib-colors
+numpy
+scikit-learn
 streamlit-extras
 seaborn
 openpyxl
 plost
-streamlit.components.v1.html
-scikit-learn
 scipy
 statsmodels
 

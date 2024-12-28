@@ -255,6 +255,7 @@ with st.sidebar:
     
 
 components.html(particles_js, height=150,scrolling=False)
+# --------------- footer -----------------------------
 st.write("---")
 with st.container():
   #st.write("---")
@@ -263,7 +264,7 @@ with st.container():
   left, right = st.columns(2, gap='small', vertical_alignment="bottom")
   with left:
     #st.write('##')
-    st.link_button("Mi LinkedIn", "https://www.linkedin.com/in/walter-gomez-fullstack-developer-jr-java-python-adm-finanzas/")
+    st.link_button("Mi LinkedIn", "https://www.linkedin.com/in/walter-gomez-fullstack-developer-datascience-businessintelligence-finanzas-python/")
   with right: 
      #st.write('##') 
     st.link_button("Mi Porfolio", "https://walter-portfolio-animado.netlify.app/")
