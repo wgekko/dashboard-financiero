@@ -26,7 +26,9 @@ patologías complejas -determinar tendencia- predecir tasas de crecimiento o no 
 no identificas Sector Seguro: análisis de carteras por vehículo, siniestros. tendencia, riesgo-predecir cobertura, rango de edades, potenciales mejores 
 rango de rentabilidad. Sector Inmobiliario: análisis de propiedades más demandadas, predecir tendencia, potenciales sectores urbanos con mayor rendimiento esperado,
 predecir potenciales sectores urbanísticos y rurales con crecimiento esperado. etc
-
+---------------------------------------
+link de demo 
+https://asset-financial.streamlit.app/
 
 https://github.com/user-attachments/assets/08b22eb8-93a0-46dd-a971-1c6f0beaced8
 
