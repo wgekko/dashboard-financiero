@@ -17,7 +17,7 @@ streamlit-extras
 seaborn
 openpyxl
 plost
-
+streamlit.components.v1.html
 scikit-learn
 scipy
 statsmodels
