@@ -1,5 +1,7 @@
 streamlit 
 pandas
+plotly
+matplotlib
 plotly-express
 matplotlib-colors
 components.v1.html
@@ -14,8 +16,8 @@ scipy.stats
 streamlit-extras
 seaborn
 openpyxl
-Plost
-plotly
+plost
+
 scikit-learn
 scipy
 statsmodels
