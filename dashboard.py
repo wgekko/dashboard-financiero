@@ -9,6 +9,9 @@ import base64
 import warnings
 warnings.simplefilter("ignore", category=FutureWarning)
 
+#streamlit theme=none
+theme_plotly = None 
+
 
 #"""" codigo de particulas que se agregan en le background""""
 particles_js = """<!DOCTYPE html>
@@ -155,8 +158,7 @@ particles_js = """<!DOCTYPE html>
 </body>
 </html>
 """
-#streamlit theme=none
-theme_plotly = None 
+
 
 st.set_page_config(page_title="Dashboard", page_icon="img/dashboard.png", layout="wide")
 components.html(particles_js, height=125,scrolling=False)
