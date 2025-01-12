@@ -157,6 +157,11 @@ particles_js = """<!DOCTYPE html>
 </body>
 </html>
 """
+
+#streamlit theme=none
+theme_plotly = None 
+
+
 st.set_page_config(page_title="Intervalo de Confianza", page_icon="img/dashboard.png", layout="wide")
 components.html(particles_js, height=90,scrolling=False)
 
